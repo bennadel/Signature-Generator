@@ -54,6 +54,18 @@ select {
 .header__form select[ name = "spacing" ] {
 	flex: 0 0 auto ;
 }
+@media ( max-width: 800px ) {
+	.header__form {
+		flex-direction: column ;
+	}
+	.header__form input[ name = "name" ] {
+		flex: 0 0 auto ;
+		margin: 0px 0px 10px 0px ;
+	}
+	.header__form select[ name = "slant" ] {
+		margin: 0px 0px 10px 0px ;
+	}
+}
 
 .main {
 	padding: 20px 20px 20px 20px ;
@@ -92,6 +104,7 @@ select {
 	margin: 40px 20px 20px 20px ;
 }
 .footer p {
+	line-height: 1.4 ;
 	margin: 0px 0px 0px 0px ;
 	font-size: 1rem ;
 }
